@@ -1,0 +1,107 @@
+\documentclass[11pt]{book}
+
+\title{Soluciones OMMl}   
+\author{Francisco G\'omez} 
+\date{\today} 
+
+\usepackage[spanish]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+
+\usepackage{framed}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\usepackage{amsmath, amsthm, amssymb, bbm, mathrsfs, bbold, graphicx}
+ \usepackage{makeidx}
+ 
+ \usepackage{enumitem}
+\setlist{nosep}
+ 
+ \usepackage{float}
+ \usepackage[breakable]{tcolorbox}
+ 
+ \usepackage[scr=boondox, cal=esstix]{mathalpha}
+ 
+\DeclareMathOperator{\modulus}{\text{m\'od}}
+\DeclareMathOperator{\mcd}{\text{MCD}}
+\DeclareMathOperator{\mcm}{\text{mcm}}
+
+% CONJUNTOS IMPORTANTES
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\K}{\mathbb K}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\cl}{\mathcal c}
+\newcommand{\wk}{\mathit d}
+
+% ESPACIOS DE HILBERT
+%\newcommand{\HH}{\mathscr{H}}
+
+\newcommand{\divider}{
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.45]{Divider2.eps}
+\end{figure}}
+
+
+% OTROS
+\newcommand{\LL}{\mathcal L}
+\newcommand{\CC}{\mathcal C}
+\newcommand{\B}{\mathcal B}
+
+%\newenvironment{proof}{\noindent\textit{Demostraci\'on:}}{\hfill$\square$}
+
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{cor}[thm]{Corolario}
+
+\theoremstyle{definition}
+
+\newtheorem*{ex*}{Ejemplo}
+\tcolorboxenvironment{ex*}{breakable, colback=blue!10}
+
+\definecolor{bluu}{rgb}{0.75,0.75,0.9}
+\renewcommand\emph[1]{\colorbox{bluu}{#1}}
+
+\newtheorem{pro}{Problema}
+\newtheorem*{comm*}{Comentario}
+
+\newcommand{\thistheoremname}{}
+\newtheorem*{proref*}{\thistheoremname}
+\newenvironment{pron*}[1]
+  {\renewcommand{\thistheoremname}{#1}%
+   \begin{proref*}}
+  {\end{proref*}}
+
+\makeindex
+
+\begin{document}
+
+\begin{titlepage}
+\vspace*{-3cm}
+\makebox[\dimexpr\textwidth+2cm][r] 
+
+\vspace*{5cm}
+\begin{center}
+\Huge\bfseries Aritm\-etica e introducci\'on a Teor\'ia de N\'umeros
+
+\vspace*{2cm}
+\large 
+de
+
+Francisco G\'omez
+\end{center}
+
+\end{titlepage}
+
+\newpage
+
+\tableofcontents
+
+\include{cp0}
+
+\printindex
+
+\end{document}
